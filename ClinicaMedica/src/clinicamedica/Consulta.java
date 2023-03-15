@@ -14,4 +14,38 @@ public class Consulta {
     private Double valorConsulta;
     private Medicos medicos = new Medicos();
     private Pacientes Pacientes = new Pacientes();
+
+    public String getDataConsulta() {
+        return dataConsulta;
+    }
+
+    public void setDataConsulta(String dataConsulta) {
+        this.dataConsulta = dataConsulta;
+    }
+
+    public Double getValorConsulta() {
+        return valorConsulta;
+    }
+
+    public void setValorConsulta(Double valorConsulta) {
+        this.valorConsulta = valorConsulta;
+    }
+
+    public Medicos getMedicos() {
+        return medicos;
+    }
+
+    public void setMedicos(Medicos medicos) {
+        this.medicos = medicos;
+    }
+
+    public Pacientes getPacientes() {
+        return Pacientes;
+    }
+
+    public void setPacientes(Pacientes Pacientes) {
+        this.Pacientes = Pacientes;
+    }
+    
+    
 }
