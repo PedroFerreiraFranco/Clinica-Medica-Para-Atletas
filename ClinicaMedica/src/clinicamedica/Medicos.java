@@ -10,8 +10,19 @@ package clinicamedica;
  * @author 17352499636
  */
 public class Medicos {
-    private String nomeMedico, crm, rgMedico, telefoneMedico;
-    private Especialidades especialidadeMedica = new Especialidades();
+   private String nomeMedico;
+   private String crm;
+   private String rgMedico;
+   private String telefoneMedico;
+   private Especialidades especialidade;
+
+   public Medicos(String nomeMedico, String crm, String rgMedico, String telefoneMedico, Especialidades especialidade) {
+      this.nomeMedico = nomeMedico;
+      this.crm = crm;
+      this.rgMedico = rgMedico;
+      this.telefoneMedico = telefoneMedico;
+      this.especialidade = especialidade;
+   }
     
     public void mostra(){
     System.out.println("\n*****Mostrando Dados do Médico*****");
@@ -19,8 +30,10 @@ public class Medicos {
     System.out.println("RG: "+this.getRgMedico());
     System.out.println("CRM: "+this.getCrm());
     System.out.println("Telefone: "+this.getTelefoneMedico());
+    System.out.println("Especialidade:  "+this.especialidade.getNomeEspecialidade());
+    System.out.println("Salario: "+this.especialidade.getSalarioEspecialidade());
+    }
 
-}
 
     public String getNomeMedico() {
         return nomeMedico;
@@ -53,18 +66,4 @@ public class Medicos {
     public void setTelefoneMedico(String telefoneMedico) {
         this.telefoneMedico = telefoneMedico;
     }
-
-
-    public Especialidades getEspecialidadeMedica() {
-        return especialidadeMedica;
-    }
-
-    public void setEspecialidadeMedica(Especialidades especialidadeMedica) {
-        this.especialidadeMedica = especialidadeMedica;
-    }
-
-    
-    
-     
-    
 }

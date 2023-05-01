@@ -9,10 +9,16 @@ package clinicamedica;
  *
  * @author pedro
  */
-public class Recepcionista extends Cargos {
+public class Recepcionista extends Funcionarios {
     
        @Override // anotação de método reescrito
     public double getBonificacao() {
         return super.getValorSalario() +200;
+    }
+    
+    public Recepcionista(){
+        super();
+        this.setNomeCargo("recepcionista");
+        this.setValorSalario(1800.0);
     }
 }

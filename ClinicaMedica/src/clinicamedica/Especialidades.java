@@ -11,10 +11,14 @@ package clinicamedica;
  */
 class Especialidades {
     
-    private String nomeEspecialidade;
-    private Double salarioEspecialidade;
-        
-    public String getNomeEspecialidade() {
+   private String nomeEspecialidade;
+   private float salarioEspecialidade;
+
+   public Especialidades(String nomeEspecialidade, float salarioEspecialidade) {
+      this.nomeEspecialidade = nomeEspecialidade;
+      this.salarioEspecialidade = salarioEspecialidade;
+   }
+      public String getNomeEspecialidade() {
         return nomeEspecialidade;
     }
 
@@ -22,11 +26,11 @@ class Especialidades {
         this.nomeEspecialidade = nomeEspecialidade;
     }
 
-    public Double getSalarioEspecialidade() {
+    public float getSalarioEspecialidade() {
         return salarioEspecialidade;
     }
 
-    public void setSalarioEspecialidade(Double salarioEspecialidade) {
+    public void setSalarioEspecialidade(float salarioEspecialidade) {
         this.salarioEspecialidade = salarioEspecialidade;
     }
     

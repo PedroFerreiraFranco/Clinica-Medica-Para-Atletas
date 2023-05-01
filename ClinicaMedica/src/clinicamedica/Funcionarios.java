@@ -9,7 +9,7 @@ package clinicamedica;
  *
  * @author 17352499636
  */
-public class Funcionarios {
+public class Funcionarios extends Cargos{
     private String cpfFuncionario, nomeFuncionario, rgFuncionario, telefoneFuncionario;
     
     public void mostra(){
@@ -18,6 +18,8 @@ public class Funcionarios {
     System.out.println("RG: "+this.getRgFuncionario());
     System.out.println("CPF: "+this.getCpfFuncionario());
     System.out.println("Telefone: "+this.getTelefoneFuncionario());
+        System.out.println("Cargo: "+this.getNomeCargo());
+        System.out.println("Salario: "+this.getValorSalario());
 
 }
 
@@ -53,6 +55,11 @@ public class Funcionarios {
 
     public void setTelefoneFuncionario(String telefoneFuncionario) {
         this.telefoneFuncionario = telefoneFuncionario;
+    }
+
+    @Override
+    public double getBonificacao() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

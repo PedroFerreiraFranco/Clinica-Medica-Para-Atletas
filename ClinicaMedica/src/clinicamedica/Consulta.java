@@ -12,7 +12,7 @@ package clinicamedica;
 public class Consulta {
     private String dataConsulta;
     private Double valorConsulta;
-    private Medicos medicos = new Medicos();
+    private Medicos medicos;
     private Pacientes Pacientes = new Pacientes();
 
     public String getDataConsulta() {
