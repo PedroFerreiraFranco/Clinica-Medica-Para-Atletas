@@ -11,7 +11,6 @@ package clinicamedica;
  */
 public class Funcionarios {
     private String cpfFuncionario, nomeFuncionario, rgFuncionario, telefoneFuncionario;
-    Cargos cargoFuncionario =  new Cargos(); 
     
     public void mostra(){
     System.out.println("\n*****Mostrando Dados Funcionário*****");
@@ -47,13 +46,6 @@ public class Funcionarios {
         this.cpfFuncionario = cpfFuncionario;
     }
 
-    public Cargos getCargoFuncionario() {
-        return cargoFuncionario;
-    }
-
-    public void setCargoFuncionario(Cargos cargoFuncionario) {
-        this.cargoFuncionario = cargoFuncionario;
-    }
 
     public String getTelefoneFuncionario() {
         return telefoneFuncionario;

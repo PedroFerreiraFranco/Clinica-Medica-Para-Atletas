@@ -9,7 +9,7 @@ package clinicamedica;
  *
  * @author 17352499636
  */
-public class Cargos {
+abstract public class Cargos {
     private String nomeCargo;
     private Double valorSalario;
 
@@ -29,9 +29,12 @@ public class Cargos {
         this.valorSalario = valorSalario;
     }
     
-    public void chamarCargo(){
-        
+    public void bonifica(double aumento) {
+        this.valorSalario = this.valorSalario + aumento;
+        //this.salario+=aumento;
     }
+    
+    abstract public double getBonificacao();
 
     void setValorSalario() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

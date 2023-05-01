@@ -10,6 +10,7 @@ package clinicamedica;
  * @author 17352499636
  */
 class Especialidades {
+    
     private String nomeEspecialidade;
     private Double salarioEspecialidade;
         
