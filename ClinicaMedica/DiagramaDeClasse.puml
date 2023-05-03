@@ -1,0 +1,29 @@
+@startuml
+abstract class clinicamedica.Cargos
+annotation java.lang.Override
+class clinicamedica.ClinicaMedica
+class clinicamedica.Consulta
+class clinicamedica.Especialidades
+class clinicamedica.Funcionarios
+class clinicamedica.Medicos
+class clinicamedica.Pacientes
+class clinicamedica.Recepcionista
+class clinicamedica.TesteFuncionario
+class clinicamedica.TesteInterface
+class clinicamedica.TesteReferencia
+class java.util.ArrayList
+class java.util.List
+class java.util.Scanner
+interface clinicamedica.Pagavel
+clinicamedica.ClinicaMedica ..> java.util.Scanner
+clinicamedica.Especialidades ..> java.lang.Override
+clinicamedica.Especialidades --|> clinicamedica.Pagavel
+clinicamedica.Funcionarios --|> clinicamedica.Cargos
+clinicamedica.Funcionarios ..> java.lang.Override
+clinicamedica.Recepcionista ..> java.lang.Override
+clinicamedica.Recepcionista --|> clinicamedica.Funcionarios
+clinicamedica.TesteFuncionario ..> java.util.Scanner
+clinicamedica.TesteInterface ..> java.util.ArrayList
+clinicamedica.TesteInterface ..> java.util.List
+clinicamedica.TesteInterface ..> java.util.Scanner
+@enduml
