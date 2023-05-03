@@ -8,9 +8,6 @@ public class ClinicaMedica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-                         
-        Funcionarios f1 = new Funcionarios();
         
        /* System.out.print("Digite o nome do(a) Funcionario(a): ");
         f1.setNomeFuncionario(entrada.next());

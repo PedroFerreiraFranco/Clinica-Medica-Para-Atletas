@@ -9,7 +9,7 @@ package clinicamedica;
  *
  * @author 17352499636
  */
-class Especialidades {
+class Especialidades implements Pagavel{
     
    private String nomeEspecialidade;
    private float salarioEspecialidade;
@@ -32,6 +32,15 @@ class Especialidades {
 
     public void setSalarioEspecialidade(float salarioEspecialidade) {
         this.salarioEspecialidade = salarioEspecialidade;
+    }
+
+    public Especialidades(float salario) {
+        this.salarioEspecialidade = salario;
+    }
+
+    @Override
+    public double getSalario() {
+       return salarioEspecialidade;
     }
     
     

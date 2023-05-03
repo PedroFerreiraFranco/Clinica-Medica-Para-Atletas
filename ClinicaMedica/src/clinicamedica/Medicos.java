@@ -9,7 +9,7 @@ package clinicamedica;
  *
  * @author 17352499636
  */
-public class Medicos {
+public class Medicos{
    private String nomeMedico;
    private String crm;
    private String rgMedico;
